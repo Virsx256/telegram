@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>فورم البيانات</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>أدخل بياناتك</h2>
+    <form id="dataForm">
+      <input type="text" name="firstName" placeholder="الاسم" required>
+      <input type="text" name="lastName" placeholder="العائلة" required>
+      <input type="text" name="street" placeholder="الشارع" required>
+      <input type="text" name="city" placeholder="المدينة" required>
+      <input type="text" name="country" placeholder="الدولة" required>
+      <button type="submit">إرسال</button>
+    </form>
+    <p id="status"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
