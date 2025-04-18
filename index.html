@@ -2,21 +2,44 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>فورم البيانات</title>
+  <title>نموذج تسجيل البيانات</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="form-container">
-    <h2>أدخل بياناتك</h2>
+    <h2>تسجيل البيانات</h2>
     <form id="dataForm">
-      <input type="text" name="firstName" placeholder="الاسم" required>
-      <input type="text" name="lastName" placeholder="العائلة" required>
-      <input type="text" name="street" placeholder="الشارع" required>
-      <input type="text" name="city" placeholder="المدينة" required>
-      <input type="text" name="country" placeholder="الدولة" required>
+      <div class="form-group">
+        <label>الاسم الأول</label>
+        <input type="text" name="firstName" required>
+      </div>
+      <div class="form-group">
+        <label>اسم العائلة</label>
+        <input type="text" name="lastName" required>
+      </div>
+      <div class="form-group">
+        <label>رقم المنزل</label>
+        <input type="text" name="houseNumber" required>
+      </div>
+      <div class="form-group">
+        <label>الطابق</label>
+        <input type="text" name="floor" required>
+      </div>
+      <div class="form-group">
+        <label>الشارع</label>
+        <input type="text" name="street" required>
+      </div>
+      <div class="form-group">
+        <label>المدينة</label>
+        <input type="text" name="city" required>
+      </div>
+      <div class="form-group">
+        <label>الدولة</label>
+        <input type="text" name="country" required>
+      </div>
       <button type="submit">إرسال</button>
+      <p id="status"></p>
     </form>
-    <p id="status"></p>
   </div>
   <script src="script.js"></script>
 </body>
