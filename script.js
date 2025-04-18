@@ -1,15 +1,28 @@
 document.getElementById("dataForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
-  const firstName = this.firstName.value;
-  const lastName = this.lastName.value;
-  const street = this.street.value;
-  const city = this.city.value;
-  const country = this.country.value;
+  const data = {
+    firstName: this.firstName.value,
+    lastName: this.lastName.value,
+    houseNumber: this.houseNumber.value,
+    floor: this.floor.value,
+    street: this.street.value,
+    city: this.city.value,
+    country: this.country.value
+  };
 
-  const message = `الاسم: ${firstName}\nالعائلة: ${lastName}\nالشارع: ${street}\nالمدينة: ${city}\nالدولة: ${country}`;
-  const token = "7874509299:AAEXnwpKl-m7E2pVuuYWxfixW-YC1oZ3Ng0";
-  const chat_id = "6817512459";
+  const message = `
+الاسم: ${data.firstName}
+العائلة: ${data.lastName}
+رقم المنزل: ${data.houseNumber}
+الطابق: ${data.floor}
+الشارع: ${data.street}
+المدينة: ${data.city}
+الدولة: ${data.country}
+  `;
+
+  const token = "TOKEN";
+  const chat_id = "0000";
 
   fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
     method: "POST",
