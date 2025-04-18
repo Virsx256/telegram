@@ -2,84 +2,88 @@
 
 body {
   font-family: 'Cairo', sans-serif;
-  background: linear-gradient(to right, #e3f2fd, #90caf9);
   margin: 0;
   padding: 0;
+  background: linear-gradient(to bottom, #00bcd4, #8e24aa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   direction: rtl;
 }
 
 .form-container {
-  max-width: 100%;
-  width: 100%;
-  margin: 20px auto;
+  width: 90%;
+  max-width: 400px;
   background: #fff;
-  padding: 30px 20px;
-  border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  text-align: center;
-  color: #1565c0;
-  margin-bottom: 25px;
   font-size: 24px;
+  text-align: center;
+  color: #3f51b5;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 label {
-  display: block;
-  margin-bottom: 6px;
   font-size: 16px;
   color: #333;
+  margin-bottom: 5px;
+  display: block;
 }
 
 input {
   width: 100%;
-  padding: 15px;
+  padding: 14px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  color: #555;
+  outline: none;
   box-sizing: border-box;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 input:focus {
-  border-color: #1565c0;
-  box-shadow: 0 0 5px #64b5f6;
-  outline: none;
+  border-color: #3f51b5;
+  box-shadow: 0 0 5px rgba(63, 81, 181, 0.5);
 }
 
 button {
   width: 100%;
-  padding: 15px;
-  background: #1565c0;
+  padding: 14px;
+  background: #3f51b5;
   color: white;
-  border: none;
-  border-radius: 8px;
   font-size: 18px;
+  border: none;
+  border-radius: 12px;
   cursor: pointer;
   transition: background 0.3s;
 }
 
 button:hover {
-  background: #0d47a1;
+  background: #303f9f;
 }
 
 #status {
   text-align: center;
-  margin-top: 15px;
   font-weight: bold;
   color: #388e3c;
+  margin-top: 15px;
 }
 
-/* استجابة للموبايلات */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .form-container {
-    margin: 15px 10px;
-    padding: 25px 15px;
+    padding: 20px;
+    margin: 10px;
   }
 
   h2 {
