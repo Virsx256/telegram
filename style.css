@@ -9,11 +9,11 @@ body {
 }
 
 .form-container {
-  max-width: 95%;
-  width: 400px;
-  margin: 50px auto;
+  max-width: 100%;
+  width: 100%;
+  margin: 20px auto;
   background: #fff;
-  padding: 25px 20px;
+  padding: 30px 20px;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
@@ -22,7 +22,7 @@ h2 {
   text-align: center;
   color: #1565c0;
   margin-bottom: 25px;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .form-group {
@@ -32,14 +32,14 @@ h2 {
 label {
   display: block;
   margin-bottom: 6px;
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
 }
 
 input {
   width: 100%;
-  padding: 12px;
-  font-size: 15px;
+  padding: 15px;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-sizing: border-box;
@@ -54,12 +54,12 @@ input:focus {
 
 button {
   width: 100%;
-  padding: 12px;
+  padding: 15px;
   background: #1565c0;
   color: white;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
   transition: background 0.3s;
 }
@@ -78,15 +78,15 @@ button:hover {
 /* استجابة للموبايلات */
 @media (max-width: 480px) {
   .form-container {
-    margin: 30px 10px;
-    padding: 20px 15px;
+    margin: 15px 10px;
+    padding: 25px 15px;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   input, button {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
